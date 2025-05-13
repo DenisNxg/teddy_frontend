@@ -1,8 +1,10 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, registerLocaleData} from '@angular/common';
 import { Component, EventEmitter, Input, Output, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ModalClientComponent } from '../modal-client/modal-client.component';
+import localePt from '@angular/common/locales/pt';
 
+registerLocaleData(localePt, 'pt');
 export interface Cliente {
   id: number;
   name: string;
@@ -17,7 +19,7 @@ export type CardMode = 'default' | 'selection';
 @Component({
   selector: 'app-card-client',
   imports: [CommonModule,FormsModule, ModalClientComponent],
-  providers: [{ provide: LOCALE_ID, useValue: 'pt' }]
+  providers: [{ provide: LOCALE_ID, useValue: 'pt' }],
   templateUrl: './card-client.component.html',
   styleUrl: './card-client.component.scss',  
 })
