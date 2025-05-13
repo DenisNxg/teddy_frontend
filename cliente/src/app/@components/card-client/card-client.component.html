@@ -1,7 +1,7 @@
 <div class="card-client">
   <div class="client-name">{{ cliente.name }}</div>
-  <div class="client-salary">Salário: {{ cliente.salary | currency:'BRL': : 'symbol': '4.2-2' }}</div>
-  <div class="client-company">Empresa: {{ cliente.companyValuation | currency:'BRL': : 'symbol': '4.2-2' }}</div>
+  <div class="client-salary">Salário: {{ cliente.salary | currency: 'BRL': 'symbol': '4.2-2' }}</div>
+  <div class="client-company">Empresa: {{ cliente.companyValuation | currency: 'BRL': 'symbol': '4.2-2' }}</div>
 
 <div class="icons" *ngIf="mode === 'default'">
   <img src="https://teddy-frontend-one.vercel.app/assets/images/plus.png" alt="Adicionar" class="icon plus" (click)="onAdd()" />

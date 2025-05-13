@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ModalClientComponent } from '../modal-client/modal-client.component';
 
@@ -17,8 +17,9 @@ export type CardMode = 'default' | 'selection';
 @Component({
   selector: 'app-card-client',
   imports: [CommonModule,FormsModule, ModalClientComponent],
+  providers: [{ provide: LOCALE_ID, useValue: 'pt' }]
   templateUrl: './card-client.component.html',
-  styleUrl: './card-client.component.scss'
+  styleUrl: './card-client.component.scss',  
 })
 export class CardClientComponent {
 
