@@ -4,13 +4,13 @@
   <div class="client-company">Empresa: {{ cliente.companyValuation | currency:'BRL' }}</div>
 
 <div class="icons" *ngIf="mode === 'default'">
-  <img src="https://teddy-frontend-one.vercel.app//assets/images/plus.png" alt="Adicionar" class="icon plus" (click)="onAdd()" />
-  <img src="https://teddy-frontend-one.vercel.app//assets/images/pencil.png" alt="Editar" class="icon pencil" (click)="onEdit()" />
-  <img src="https://teddy-frontend-one.vercel.app//assets/images/trash.png" alt="Excluir" class="icon trash" (click)="onDelete()" />
+  <img src="https://teddy-frontend-one.vercel.app/assets/images/plus.png" alt="Adicionar" class="icon plus" (click)="onAdd()" />
+  <img src="https://teddy-frontend-one.vercel.app/assets/images/pencil.png" alt="Editar" class="icon pencil" (click)="onEdit()" />
+  <img src="https://teddy-frontend-one.vercel.app/assets/images/trash.png" alt="Excluir" class="icon trash" (click)="onDelete()" />
 </div>
 
 <div class="icons-minus" *ngIf="mode !== 'default'">
-  <img src="https://teddy-frontend-one.vercel.app//assets/images/minus.png" alt="Remover" class="icon plus" (click)="onRemove()" />
+  <img src="https://teddy-frontend-one.vercel.app/assets/images/minus.png" alt="Remover" class="icon plus" (click)="onRemove()" />
 </div>
 </div>
 
