@@ -25,7 +25,7 @@ export const routes: Routes = [
         loadComponent: () =>
           loadRemoteModule({
             type: 'module',
-            remoteEntry: 'https://teddy-frontend-cliente.vercel.app/remoteEntry.js', 
+            remoteEntry: 'https://teddy-frontend-one.vercel.app//remoteEntry.js', 
             exposedModule: './Component',
           }).then((m) => m.AppComponent),
       },
