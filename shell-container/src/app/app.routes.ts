@@ -7,7 +7,7 @@ export const routes: Routes = [
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'https://welcome-coral.vercel.app/remoteEntry.js',
+        remoteEntry: 'https://teddy-frontend-welcome.vercel.app/remoteEntry.js',
         exposedModule: './Component',
       }).then((m) => m.AppComponent),
   },
@@ -16,7 +16,7 @@ export const routes: Routes = [
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
-         remoteEntry: 'https://home-teddy.vercel.app/remoteEntry.js',
+         remoteEntry: 'https://teddy-frontend-home.vercel.app/remoteEntry.js',
         exposedModule: './Component',
       }).then((m) => m.AppComponent),
     loadChildren: () => [
@@ -25,7 +25,7 @@ export const routes: Routes = [
         loadComponent: () =>
           loadRemoteModule({
             type: 'module',
-            remoteEntry: 'https://cliente-teddyy.vercel.app/remoteEntry.js', 
+            remoteEntry: 'https://teddy-frontend-cliente.vercel.app/remoteEntry.js', 
             exposedModule: './Component',
           }).then((m) => m.AppComponent),
       },
